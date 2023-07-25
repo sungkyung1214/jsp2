@@ -1,0 +1,9 @@
+INDEX VERSION 1.132
+D:\ksk\jspstudy2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3059797606.index
+\02_jsp\src\main\java
+D:\ksk\jspstudy2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1221589885.index
+\02_jsp\src\main\java
+D:\ksk\jspstudy2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2822369793.index
+\02_jsp\src\main\java
+D:\ksk\jspstudy2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1363616953.index
+\02_jsp\src\main\java

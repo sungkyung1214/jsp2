@@ -1,0 +1,31 @@
+package com.guestbook.model;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.guestbook.db.DAO;
+import com.guestbook.db.VO;
+
+
+
+
+public class WriteOkCommand implements Command{
+
+	@Override
+	public String exec(HttpServletRequest request, HttpServletResponse response) {
+		// 받아온 데이터들을 DB저장하기 위해서 VO 생성하기
+		VO vo = new VO();
+		vo.setName(request.getParameter("name"));
+		vo.setSubject(request.getParameter("subject"));
+		vo.setEmail(request.getParameter("email"));
+		vo.setPwd(request.getParameter("pwd"));
+		vo.setPwd(request.getParameter("content"));
+		//=> 여기 ""에 있는 각각의 이름들은 write.jsp 파일에 있는 name="요애들"
+		
+		
+		int result=DAO.getInsert(vo);
+		
+		return "GuestController?cmd=list";
+	}
+
+}
